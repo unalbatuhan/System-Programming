@@ -47,7 +47,7 @@ while (e[1] = strtok(NULL, ""))
 printf("%s %s\n ", bolum[1], e[1]);
 1++;
 }
-cloese(fd);
+close(fd);
 }
 else                                /* Cocuk process in sonlanmasını bekliyor */
 waitpid(-1, &status, 0);
